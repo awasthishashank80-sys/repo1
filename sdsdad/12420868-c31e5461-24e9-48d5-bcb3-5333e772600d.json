@@ -1,0 +1,21 @@
+{
+	"info": {
+		"_postman_id": "12420868-c31e5461-24e9-48d5-bcb3-5333e772600d",
+		"name": "ASasd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"id": "12420868-78208ae0-654e-4d5d-a02b-cb0b8c5992c4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
