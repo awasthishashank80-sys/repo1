@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "536514-f74614bd-b94e-4ac9-aa77-6d3a5c303219",
+		"name": "Movie Recommendation Service",
+		"description": "A service to get personalized movie recommendations and manage favorite movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Movie Recommendations",
+			"item": [
+				{
+					"name": "Get Recommendations by Mood",
+					"id": "536514-b53e395b-6851-4af1-bcd1-5ae25c297f43",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{baseUrl}}/recommendations/mood?mood=happy&timeOfDay=evening&specialEvent=date_night",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"recommendations",
+								"mood"
+							],
+							"query": [
+								{
+									"key": "mood",
+									"value": "happy",
+									"description": "Mood for movie recommendation"
+								},
+								{
+									"key": "timeOfDay",
+									"value": "evening",
+									"description": "Time of day for recommendation"
+								},
+								{
+									"key": "specialEvent",
+									"value": "date_night",
+									"description": "Special event context"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "536514-329cfd60-9574-4467-915d-af1242e05fac"
+		},
+		{
+			"name": "Favorites",
+			"item": [
+				{
+					"name": "Add Movie to Favorites",
+					"id": "536514-cb557cea-f73e-468c-9c42-5ee1cdefba6e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"movieId\": \"movie123\",\n    \"userId\": \"user456\"\n}"
+						},
+						"url": {
+							"raw": "{{protocol}}://{{baseUrl}}/favorites",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"favorites"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "536514-a773a268-1844-4704-a551-be017b532b3d"
+		},
+		{
+			"name": "Popular Recommendations",
+			"item": [
+				{
+					"name": "Get Popular Movies",
+					"id": "536514-d0136854-f678-4bd1-9b71-0b487369873e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{baseUrl}}/recommendations/popular?genre=comedy&limit=5",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"recommendations",
+								"popular"
+							],
+							"query": [
+								{
+									"key": "genre",
+									"value": "comedy",
+									"description": "Movie genre"
+								},
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Number of recommendations"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "536514-d3c22096-8721-4d4a-99e9-bb669524f539"
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "api.movie-recommendations.com/v1",
+			"type": "string"
+		},
+		{
+			"key": "protocol",
+			"value": "https",
+			"type": "string"
+		}
+	]
+}
