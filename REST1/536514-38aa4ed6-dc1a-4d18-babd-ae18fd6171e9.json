@@ -19,7 +19,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{baseUrl}}/recommendations/mood?mood=happy&timeOfDay=evening&specialEvent=date_night",
+							"raw": "{{protocol}}://{{baseUrl}}/recommendations/mood?mood=&timeOfDay=&specialEvent=date_night",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{baseUrl}}"
@@ -31,12 +31,12 @@
 							"query": [
 								{
 									"key": "mood",
-									"value": "happy",
+									"value": "",
 									"description": "Mood for movie recommendation"
 								},
 								{
 									"key": "timeOfDay",
-									"value": "evening",
+									"value": "",
 									"description": "Time of day for recommendation"
 								},
 								{
