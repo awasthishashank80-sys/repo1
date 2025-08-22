@@ -19,7 +19,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{baseUrl}}/recommendations/mood?mood=happy&timeOfDay=sdsdds&specialEventfffggg=-1000&fxdfd=true&sfdasd=adada",
+							"raw": "{{protocol}}://{{baseUrl}}/recommendations/mood?mood=happy&timeOfDay=sdsdds&specialEventfffggg=&fxdfd=true&sfdasd=adada",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{baseUrl}}"
@@ -32,30 +32,25 @@
 								{
 									"key": "mood",
 									"value": "happy",
-									"description": "Mood for movie recommendation",
-									"type": "text"
+									"description": "Mood for movie recommendation"
 								},
 								{
 									"key": "timeOfDay",
 									"value": "sdsdds",
-									"description": "Time of day for recommendation",
-									"type": "text"
+									"description": "Time of day for recommendation"
 								},
 								{
 									"key": "specialEventfffggg",
-									"value": "-1000",
-									"description": "Special event context",
-									"type": "text"
+									"value": "",
+									"description": "Special event context"
 								},
 								{
 									"key": "fxdfd",
-									"value": "true",
-									"type": "text"
+									"value": "true"
 								},
 								{
 									"key": "sfdasd",
-									"value": "adada",
-									"type": "text"
+									"value": "adada"
 								}
 							]
 						}
