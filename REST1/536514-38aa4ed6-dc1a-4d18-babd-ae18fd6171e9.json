@@ -19,7 +19,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{baseUrl}}/recommendations/mood?mood=&timeOfDay=&specialEvent=date_night",
+							"raw": "{{protocol}}://{{baseUrl}}/recommendations/mood?mood=&timeOfDay=&specialEventfffggg=-1000&fxdfd=true",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{baseUrl}}"
@@ -40,9 +40,14 @@
 									"description": "Time of day for recommendation"
 								},
 								{
-									"key": "specialEvent",
-									"value": "date_night",
+									"key": "specialEventfffggg",
+									"value": "-1000",
 									"description": "Special event context"
+								},
+								{
+									"key": "fxdfd",
+									"value": "true",
+									"type": "text"
 								}
 							]
 						}
